@@ -73,8 +73,8 @@ Let
 Then
 $$
 \begin{aligned}
-\dot{x} = \alpha (y - x - f(x)),
-\dot{y} = x - y + z,\quad
+\dot{x} = \alpha (y - x - f(x)),\\
+\dot{y} = x - y + z,\\
 \dot{z} = -\beta y,
 \end{aligned}
 $$
