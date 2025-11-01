@@ -130,9 +130,7 @@ Typical parameter variations cause:
 - **Shilnikov homoclinic orbit** → guarantee of chaos for saddle-focus equilibrium
 
 **Common parameter set:**
-$$
-\alpha = 9.0,\quad \beta = 14.286,\quad m_0=-1.143,\quad m_1=-0.714.
-$$
+$$\alpha = 9.0,\beta = 14.286,m_0=-1.143, m_1=-0.714.$$
 
 Produces the famous **double-scroll attractor**.
 
