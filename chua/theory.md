@@ -75,9 +75,7 @@ $$\dot{x} = \alpha (y - x - f(x)),\quad
 \dot{y} = x - y + z,\quad
 \dot{z} = -\beta y,$$
 with
-$$
-f(x) = m_1 x + \tfrac{1}{2}(m_0 - m_1)(|x + 1| - |x - 1|),
-$$
+$$ f(x) = m_1 x + \tfrac{1}{2}(m_0 - m_1)(|x + 1| - |x - 1|), $$
 and parameters
 $$
 \alpha = \frac{C_2}{C_1}, \qquad
