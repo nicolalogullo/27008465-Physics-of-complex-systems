@@ -74,11 +74,12 @@ Then
 
 $$
 \begin{aligned}
-C_1 \frac{dv_1}{dt} &= \frac{1}{R}(v_2 - v_1) - i_{NR}(v_1), \\
-C_2 \frac{dv_2}{dt} &= \frac{1}{R}(v_1 - v_2) + i_L, \\
-L \frac{di_L}{dt} &= -v_2.
+\frac{dx}{dt} &= \alpha (y - x - f(x)), \\
+\frac{dy}{dt} &= x - y + z, \\
+\frac{dz}{dt} &= -\beta y,
 \end{aligned}
 $$
+
 with
 $$ f(x) = m_1 x + \tfrac{1}{2}(m_0 - m_1)(|x + 1| - |x - 1|), $$
 and parameters
