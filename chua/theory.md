@@ -51,10 +51,8 @@ $$
 
 Piecewise-linear function:
 
-$$
-i_{NR}(v_1) = m_1 v_1 + \tfrac{1}{2}(m_0 - m_1)
-  \big(|v_1 + B_p| - |v_1 - B_p|\big)
-$$
+$$ i_{NR}(v_1) = m_1 v_1 + \tfrac{1}{2}(m_0 - m_1)
+  \big(|v_1 + B_p| - |v_1 - B_p|\big) $$
 
 - $m_0$: inner (negative) slope  
 - $m_1$: outer slope  
