@@ -65,10 +65,10 @@ This defines a **three-segment** $I–V$ curve.
 ### 5. Normalization and Dimensionless Form
 
 Let
-- $$ x = \frac{v_1}{B_p} $$
-- $$ y = \frac{v_2}{B_p}$$
-- $$ z = \frac{R i_L}{B_p}$$
-- $$ \tau = \frac{t}{R C_2}.$$
+- $x = \frac{v_1}{B_p}$
+- $y = \frac{v_2}{B_p}$
+- $z = \frac{R i_L}{B_p}$
+- $\tau = \frac{t}{R C_2}.$
 
 Then
 $$\dot{x} = \alpha (y - x - f(x)),\quad
