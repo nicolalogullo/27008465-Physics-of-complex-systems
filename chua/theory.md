@@ -81,7 +81,7 @@ $$
 $$
 
 with
-$$ f(x) = m_1 x + \frac{1}{2}(m_0 - m_1)(|x + 1| - |x - 1|), $$
+$$f(x) = m_1 x + \frac{1}{2} (m_0 - m_1)(|x + 1| - |x - 1|), $$
 and parameters
 $$
 \begin{aligned}
