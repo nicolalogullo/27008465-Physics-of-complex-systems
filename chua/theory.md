@@ -1,12 +1,7 @@
 # Lecture: Chua’s Oscillator — A Paradigm of Low-Dimensional Chaos
-**Course:** Complex Systems (Graduate Physics)  
-**Duration:** 3 hours (1.5 h theory + 1.5 h lab)  
-**Instructor:** [Your Name]  
 **References:**  
 - Leon O. Chua, *IEEE Transactions on Circuits and Systems*, 1983–1986  
 - Matsumoto T., *IEEE Trans. Circuits Syst.*, 1984  
-- Sordi et al., *Revista Brasileira de Ensino de Física*, 2008  
-- Parker & Chua, *Practical Numerical Algorithms for Chaotic Systems*, 1989  
 
 ---
 
@@ -42,13 +37,13 @@ Lorenz, Rössler, Duffing, **Chua** — each is a low-dimensional autonomous sys
 
 Apply Kirchhoff’s laws:
 
-\[
+$$
 \begin{aligned}
 C_1 \frac{dv_1}{dt} &= \frac{1}{R}(v_2 - v_1) - i_{NR}(v_1), \\
 C_2 \frac{dv_2}{dt} &= \frac{1}{R}(v_1 - v_2) + i_L, \\
 L \frac{di_L}{dt} &= -v_2.
 \end{aligned}
-\]
+$$
 
 ---
 
