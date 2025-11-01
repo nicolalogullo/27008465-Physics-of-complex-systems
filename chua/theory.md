@@ -73,9 +73,9 @@ Let
 Then
 $$
 \begin{aligned}
-\dot{x} = \alpha (y - x - f(x)),\\
-\dot{y} = x - y + z,\\
-\dot{z} = -\beta y,
+\frac{dx}{dt} = \alpha (y - x - f(x)),\\
+\frac{dy}{dt} = x - y + z,\\
+\frac{dz}{dt} = -\beta y,
 \end{aligned}
 $$
 
