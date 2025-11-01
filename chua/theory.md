@@ -65,19 +65,15 @@ This defines a **three-segment** $I–V$ curve.
 ### 5. Normalization and Dimensionless Form
 
 Let
-$$
-x = \frac{v_1}{B_p},\quad
+$$ x = \frac{v_1}{B_p},\quad
 y = \frac{v_2}{B_p},\quad
 z = \frac{R i_L}{B_p},\quad
-\tau = \frac{t}{R C_2}.
-$$
+\tau = \frac{t}{R C_2}.$$
 
 Then
-$$
-\dot{x} = \alpha (y - x - f(x)),\quad
+$$\dot{x} = \alpha (y - x - f(x)),\quad
 \dot{y} = x - y + z,\quad
-\dot{z} = -\beta y,
-$$
+\dot{z} = -\beta y,$$
 with
 $$
 f(x) = m_1 x + \tfrac{1}{2}(m_0 - m_1)(|x + 1| - |x - 1|),
