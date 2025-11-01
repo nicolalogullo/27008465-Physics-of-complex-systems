@@ -71,9 +71,14 @@ Let
 - $\tau = \frac{t}{R C_2}.$
 
 Then
-$$\dot{x} = \alpha (y - x - f(x)),\quad
+$$
+\begin{aligned}
+\dot{x} = \alpha (y - x - f(x)),
 \dot{y} = x - y + z,\quad
-\dot{z} = -\beta y,$$
+\dot{z} = -\beta y,
+\end{aligned}
+$$
+
 with
 $$ f(x) = m_1 x + \tfrac{1}{2}(m_0 - m_1)(|x + 1| - |x - 1|), $$
 and parameters
