@@ -51,69 +51,69 @@ $$
 
 Piecewise-linear function:
 
-\[
+$$
 i_{NR}(v_1) = m_1 v_1 + \tfrac{1}{2}(m_0 - m_1)
   \big(|v_1 + B_p| - |v_1 - B_p|\big)
-\]
+$$
 
-- \(m_0\): inner (negative) slope  
-- \(m_1\): outer slope  
-- \(B_p\): break voltage  
+- $m_0$: inner (negative) slope  
+- $m_1$: outer slope  
+- $B_p$: break voltage  
 
-This defines a **three-segment** \(I\)–\(V\) curve.
+This defines a **three-segment** $I–V$ curve.
 
 ---
 
 ### 5. Normalization and Dimensionless Form
 
 Let
-\[
+$$
 x = \frac{v_1}{B_p},\quad
 y = \frac{v_2}{B_p},\quad
 z = \frac{R i_L}{B_p},\quad
 \tau = \frac{t}{R C_2}.
-\]
+$$
 
 Then
-\[
+$$
 \dot{x} = \alpha (y - x - f(x)),\quad
 \dot{y} = x - y + z,\quad
 \dot{z} = -\beta y,
-\]
+$$
 with
-\[
+$$
 f(x) = m_1 x + \tfrac{1}{2}(m_0 - m_1)(|x + 1| - |x - 1|),
-\]
+$$
 and parameters
-\[
+$$
 \alpha = \frac{C_2}{C_1}, \qquad
 \beta  = \frac{R^2 C_2}{L}.
-\]
+$$
 
 ---
 
 ### 6. Equilibria and Linear Stability
 
-Set \(\dot{x}=\dot{y}=\dot{z}=0\):
+Set $\dot{x}=\dot{y}=\dot{z}=0$:
 
-\[
+$$
 f(x^*) = -x^*, \quad y^* = 0, \quad z^* = -x^*.
-\]
+$$
 
 Hence there are **three fixed points**:
-\[
+$$
 E_0=(0,0,0), \quad E_{\pm}=(x_{\pm},0,-x_{\pm}).
-\]
+$$
 
 **Jacobian:**
-\[
+$$
 J =
 \begin{pmatrix}
 -\alpha(1+f'(x^*)) & \alpha & 0 \\
 1 & -1 & 1 \\
 0 & -\beta & 0
 \end{pmatrix}
-\]
+$$
 
 Eigenvalues determine local type:
 - Inner point → unstable focus or saddle-focus  
@@ -130,9 +130,9 @@ Typical parameter variations cause:
 - **Shilnikov homoclinic orbit** → guarantee of chaos for saddle-focus equilibrium
 
 **Common parameter set:**
-\[
+$$
 \alpha = 9.0,\quad \beta = 14.286,\quad m_0=-1.143,\quad m_1=-0.714.
-\]
+$$
 
 Produces the famous **double-scroll attractor**.
 
@@ -150,19 +150,19 @@ Produces the famous **double-scroll attractor**.
 ### 9. Quantitative Measures
 
 **Largest Lyapunov exponent**
-\[
+$$
 \lambda_1 = \lim_{t \to \infty}
  \frac{1}{t} \ln \frac{||\delta X(t)||}{||\delta X(0)||}.
-\]
+$$
 
 **Kaplan–Yorke dimension**
-\[
+$$
 D_{KY} = j + \frac{\sum_{i=1}^{j}\lambda_i}{|\lambda_{j+1}|}.
-\]
+$$
 
 **Poincaré map**
-- Plane \(y=0,\ \dot{y}>0\)
-- Projection \((x,z)\) shows fractal cross-section of attractor.
+- Plane $y=0,\ \dot{y}>0$
+- Projection $(x,z)$ shows fractal cross-section of attractor.
 
 ---
 
@@ -173,18 +173,3 @@ D_{KY} = j + \frac{\sum_{i=1}^{j}\lambda_i}{|\lambda_{j+1}|}.
 - Rich phenomena: multistability, intermittency, crises, chaos control.
 
 ---
-
-## 🧪 Part II — Numerical Laboratory Session
-
-### 1. Learning Goals
-Students will:
-1. Implement Chua’s equations in C++ using Runge–Kutta 4.  
-2. Integrate trajectories and record time series.  
-3. Visualize attractors and Poincaré sections.  
-4. Explore parameter-induced bifurcations and chaos.  
-
----
-
-### 2. Simulation Overview
-
-Files:
