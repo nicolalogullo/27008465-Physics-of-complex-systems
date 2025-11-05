@@ -144,6 +144,6 @@ J =
 \end{pmatrix}
 $$
 
-where $ x^{ * } $ is the x component of the fixed point $( x^*, y^*, z^*  )$ considered. 
+where $ x^* $ is the x component of the fixed point $( x^*, y^*, z^*  )$ considered. 
 
 
