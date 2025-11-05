@@ -22,15 +22,16 @@ Lorenz, Rössler, Duffing, **Chua** — each is a low-dimensional autonomous sys
 ---
 
 ### 2. Circuit Description
-
+![](images/Chua_circuit.png)
 **Components**
 | Symbol | Element | Role |
 |---------|----------|------|
-| C₁ | Capacitor | voltage \(v_1\) |
-| C₂ | Capacitor | voltage \(v_2\) |
-| L  | Inductor  | current \(i_L\) |
-| R  | Resistor  | linear damping |
-| N_R | Nonlinear resistor (“Chua diode”) | source of nonlinearity |
+| $C_1$ | Capacitor | voltage $v_1$) |
+| $C_2$ | Capacitor | voltage $v_2$ |
+| $L$  | Inductor  | current $i_L$ |
+| $R$  | Resistor  | linear damping |
+| $R_0$  | Resistor  | linear damping |
+| $NR$ | Nonlinear resistor (“Chua diode”) | source of nonlinearity |
 
 ---
 
