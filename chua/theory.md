@@ -1,4 +1,4 @@
-# Lecture: Chua’s Oscillator — A Paradigm of Low-Dimensional Chaos
+# Chua Oscillator — A Paradigm of Chaos
 **References:**  
 - Leon O. Chua, *IEEE Transactions on Circuits and Systems*, 1983–1986  
 - Matsumoto T., *IEEE Trans. Circuits Syst.*, 1984
@@ -11,13 +11,14 @@
 ### 1. Motivation and Context
 
 - **Goal:** Understand how simple deterministic circuits can exhibit complex, aperiodic, and chaotic dynamics.  
-- **Why Chua’s circuit?**  
-  - It’s the *simplest physical chaotic oscillator*.  
-  - Realizable with off-the-shelf electronic components.  
+- **Why Chua circuit?**  
+  - It is the *simplest physical chaotic oscillator*.  
+  - Realizable with simple electronic components.  
   - Ideal for exploring bifurcations, attractors, Lyapunov exponents, and fractal geometry.  
 
 **Key chaotic oscillator families:**
 Lorenz, Rössler, Duffing, **Chua** — each is a low-dimensional autonomous system.
+Autonomous system are systems displaying time varying outputs withouth a time-varying input 
 
 ---
 
