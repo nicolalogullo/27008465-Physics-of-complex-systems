@@ -1,8 +1,8 @@
 # Chua Oscillator — A Paradigm of Chaos
 **References:**  
-- Leon O. Chua, *IEEE Transactions on Circuits and Systems*, 1983–1986  
-- Matsumoto T., *IEEE Trans. Circuits Syst.*, 1984
-- Pivka, L., Wu, C.W., Huang, A.: Chua’s oscillator: a compendium of chaotic phenomena. [J. Franklin Inst. 331, 705–741 (1994)](https://people.eecs.berkeley.edu/~chua/papers/Pivka94.pdf)
+- Chua L. O., IEICE Trans. Fundamentals E76-A, 704, [pdf](1993(https://people.eecs.berkeley.edu/~chua/papers/Chua93c.pdf))  
+- Galias Z., Positive Topological Entropy of Chua's Circuit: A Computer Assisted Proof. International Journal of Bifurcation and Chaos, 331-349 (1997) [pdf](https://people.eecs.berkeley.edu/~chua/papers/Galias97.pdf)
+- Pivka, L., Wu, C.W., Huang, A.: Chua’s oscillator: a compendium of chaotic phenomena. J. Franklin Inst. 331, 705–741 (1994) [pdf](https://people.eecs.berkeley.edu/~chua/papers/Pivka94.pdf)
 
 ---
 
@@ -23,7 +23,7 @@ Autonomous system are systems displaying time varying outputs withouth a time-va
 ---
 
 ### 2. Circuit Description
-![](images/Chua_circuit.png)
+![Schematic of a Chua circuit](images/Chua_circuit.png)
 
 **Components**
 | Symbol | Element | Role |
@@ -58,9 +58,16 @@ $$
 \begin{aligned}
 C_1 \frac{dv_1}{dt} &= \frac{1}{R}(v_2 - v_1) - i_{NR}(v_1), \\
 C_2 \frac{dv_2}{dt} &= \frac{1}{R}(v_1 - v_2) + i_3, \\
-L \frac{di_L}{dt} &= -v_2-R_0 i_3.
+L \frac{di_3}{dt} &= -v_2-R_0 i_3.
 \end{aligned}
 $$
+
+The current $i_{NR}(v_1)$ is the current flowing through the non-linear resistor.
+In general can have any form, provided it is a non-linear function of $v_1$.
+The easiest form [Chua 1993] is a piecewise linear function.
+![Example of a piecewise linear response](images/piecewise.png)
+
+
 
 ---
 
