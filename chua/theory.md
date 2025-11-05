@@ -96,9 +96,9 @@ Through which we can rewrite the set of equations as:
 
 $$
 \begin{aligned}
-\frac{dx}{dt} &= \alpha (y - x - f(x)), \\
-\frac{dy}{dt} &= x - y + z, \\
-\frac{dz}{dt} &= -\beta y -gamma z,\\
+\frac{dx}{d\tau} &= \alpha (y - x - f(x)), \\
+\frac{dy}{d\tau} &= x - y + z, \\
+\frac{dz}{d\tau} &= -\beta y -\gamma z,\\
 f(x) &= b x + \frac{1}{2} (a - b)(|x + 1| - |x - 1|).
 \end{aligned}
 $$
@@ -106,14 +106,10 @@ $$
 
 ---
 
-### 6. Equilibria and Linear Stability
+### 5. Equilibria and Linear Stability
+Let us find the fixed points of this equation by setting
 
-Set $\dot{x}=\dot{y}=\dot{z}=0$:
-
-$$
-f(x^*) = -x^*, \quad y^* = 0, \quad z^* = -x^*.
-$$
-
+Set $\frac{dx}{d\tau}=0,\frac{dy}{d\tau}=0,\frac{dx}{d\tau}=0$
 Hence there are **three fixed points**:
 $$
 E_0=(0,0,0), \quad E_{\pm}=(x_{\pm},0,-x_{\pm}).
