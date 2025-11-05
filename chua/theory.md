@@ -27,18 +27,28 @@ Lorenz, Rössler, Duffing, **Chua** — each is a low-dimensional autonomous sys
 **Components**
 | Symbol | Element | Role |
 |---------|----------|------|
-| $C_1$ | Capacitor | voltage $v_1$) |
+| $C_1$ | Capacitor | voltage $v_1$ |
 | $C_2$ | Capacitor | voltage $v_2$ |
-| $L$  | Inductor  | current $i_L$ |
+| $L$  | Inductor  | current $i_3$ |
 | $R$  | Resistor  | linear damping |
 | $R_0$  | Resistor  | linear damping |
-| $NR$ | Nonlinear resistor (“Chua diode”) | source of nonlinearity |
+| $N_R$ | Nonlinear resistor (“Chua diode”) | source of nonlinearity |
 
 ---
 
 ### 3. Governing Equations
 
 Apply Kirchhoff’s laws:
+
+1) The sum of all currents in a node is zero:
+$$
+\Sum_{l\in Node} i_l=0
+$$
+
+2) The sum of all potential drops within a loop is zero
+$$
+\Sum_{l\in Loop} v_l=0
+$$
 
 $$
 \begin{aligned}
