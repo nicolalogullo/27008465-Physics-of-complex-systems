@@ -119,7 +119,7 @@ Hence there is the possibility of **three fixed points**:
 |   Region  |  Fixed point (x,y,z) |
 |-------------|-------------|
 | $x < -1$ | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{\beta}{\beta+\gamma}\right) x^{-}$ |
-| $ | x | < 1$ | $(0,0,0)$ |
+| $  &#124; x &#124; < 1$ | $(0,0,0)$ |
 | $x > 1$ | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{\beta}{\beta+\gamma}\right) x^{+}$ |
 
 with:
@@ -144,6 +144,6 @@ J =
 \end{pmatrix}
 $$
 
-where $x^*$ is the x component of the fixed point $( x^*, y^*, z^*  )$ considered. 
+where $x^$ is the x component of the fixed point $( x^*, y^*, z^*  )$ considered. 
 
 
