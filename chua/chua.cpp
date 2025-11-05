@@ -8,9 +8,9 @@ struct params {
 
 // Non-linear resistor potential drop
 double nr_pot(double v, const params& p) {
-    if (v > 1.0)  return p.b * v + (p.a - p.b);
-    if (v < -1.0) return p.b * v - (p.a - p.b);
-    return p.a * v + ( p.a - p.b ) * ( abs( v + 1.0 ) - abs( v - 1.0) );
+    //if (v > 1.0)  return p.b * v + (p.a - p.b);
+    //if (v < -1.0) return p.b * v - (p.a - p.b);
+    return p.b * v + 0.5*( p.a - p.b ) * ( abs( v + 1.0 ) - abs( v - 1.0) );
 }
 
 // Right-hand side of the system of differential equations
