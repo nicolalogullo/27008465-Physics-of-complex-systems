@@ -117,15 +117,17 @@ Hence there is the possibility of **three fixed points**:
 
 |   Region  |  Fixed point  |
 |-------------|-------------|
-| x < -1 | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{\beta}{\beta+\gamma}\right) x^{-}$ |
-| &#124; x &#124; < 1 | $(0,0,0)$ |
-| x > 1 | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{\beta}{\beta+\gamma}\right) x^{+}$ |
+| $x < -1$ | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{\beta}{\beta+\gamma}\right) x^{-}$ |
+| $ | x | < 1$ | $(0,0,0)$ |
+| $x > 1$ | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{\beta}{\beta+\gamma}\right) x^{+}$ |
 
 with:
 
 $$
-x^{\pm}=\pm\frac{(b-a)(\gamma+\beta)}{(\beta+b(\gamma+\beta))}
+x^{\pm}=\pm\frac{(b-a)(\gamma+\beta)}{(\beta+b(\gamma+\beta))}.
 $$
+
+The two fixed points in the outer region $ |x|> 1 $ exist only for $\pm x^{\pm}>\pm 1$
 
 **Jacobian:**
 $$
