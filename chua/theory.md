@@ -45,16 +45,19 @@ Apply Kirchhoff’s laws:
 
 | Quantity | Expression |
 |-----------|---------------|
-| Currents | $\sum\limits_{l \in \text{Node}} i_l=0  \hspace{1cm}$    | 
-| Voltages | $\sum\limits_{l \in \text{Loop}} v_l=0  $    | 
+| Current | $\sum\limits_{l \in \text{Node}} i_l=0  \hspace{1cm}$    | 
+| Voltage | $\sum\limits_{l \in \text{Loop}} v_l=0  \hspace{1cm}$    | 
 
 
+We apply the first rule to the the two top nodes, and the second one to the loop
+containing the inductor $L$, the resistor $R_0$ and the capacitor $C_2$.
+Therefore getting the equations:
 
 $$
 \begin{aligned}
 C_1 \frac{dv_1}{dt} &= \frac{1}{R}(v_2 - v_1) - i_{NR}(v_1), \\
-C_2 \frac{dv_2}{dt} &= \frac{1}{R}(v_1 - v_2) + i_L, \\
-L \frac{di_L}{dt} &= -v_2.
+C_2 \frac{dv_2}{dt} &= \frac{1}{R}(v_1 - v_2) + i_3, \\
+L \frac{di_L}{dt} &= -v_2-R_0 i_3.
 \end{aligned}
 $$
 
