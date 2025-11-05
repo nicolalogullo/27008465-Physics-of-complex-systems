@@ -140,10 +140,10 @@ J =
 \begin{pmatrix}
 -\alpha(1+f'(x^*)) & \alpha & 0 \\
 1 & -1 & 1 \\
-0 & -\beta & -gamma
+0 & -\beta & -\gamma
 \end{pmatrix}
 $$
 
-where $ x^* $ is the x component of the fixed point $( x^*, y^*, z^*  )$ considered. 
+where $ x^{ * } $ is the x component of the fixed point $( x^*, y^*, z^*  )$ considered. 
 
 
