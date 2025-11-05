@@ -44,10 +44,9 @@ Apply Kirchhoff’s laws:
 2) The sum of all potential drops within a loop is zero:
 
 $$ 
-\begin{aligned}
-&\sum\limits_{l \in \text{Node}} i_l&=0 \\
-&\sum\limits_{l \in \text{Loop}} v_l&=0
-\end{aligned}
+\begin{tabular}{cc}
+\sum\limits_{l \in \text{Node}} i_l=0 & \sum\limits_{l \in \text{Loop}} v_l=0
+\end{tabular}
 $$
 
 
