@@ -130,7 +130,6 @@ $$
 The two fixed points in the outer region $ |x|> 1 $ exist only for $\pm x^{\pm}>\pm 1$.
 
 **Jacobian:**
-
 $$
 J =
 \begin{pmatrix}
