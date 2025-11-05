@@ -122,6 +122,7 @@ Hence there is the possibility of **three fixed points**:
 | x > 1 | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{\beta}{\beta+\gamma}\right) x^{+}$ |
 
 with:
+
 $$
 x^{\pm}=\pm\frac{(b-a)(\gamma+\beta)}{(\beta+b(\gamma+\beta))}
 $$
