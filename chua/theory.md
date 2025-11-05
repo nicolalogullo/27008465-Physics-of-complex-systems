@@ -39,21 +39,14 @@ Lorenz, Rössler, Duffing, **Chua** — each is a low-dimensional autonomous sys
 ### 3. Governing Equations
 
 Apply Kirchhoff’s laws:
+1) The sum of all currents in a node is zero
+2) The sum of all potential drops within a loop is zero
 
 
-| Element | Role |
+| Quantity | Expression |
 |---------|----------|
 | Currents | $\sum\limits_{l \in \text{Node}} i_l=0$ | 
 | Voltages | $\sum\limits_{l \in \text{Loop}} v_l=0$ | 
-
-$$ 
-\begin{aligned}
-&&\text{1) The sum of all currents in a node is zero:}\\
-&&\sum\limits_{l \in \text{Node}} i_l=0 \\
-&&\text{2) The sum of all potential drops within a loop is zero:}\\
-&&\sum\limits_{l \in \text{Loop}} v_l=0
-\end{aligned}
-$$
 
 
 
