@@ -23,6 +23,7 @@ Lorenz, Rössler, Duffing, **Chua** — each is a low-dimensional autonomous sys
 
 ### 2. Circuit Description
 ![](images/Chua_circuit.png)
+
 **Components**
 | Symbol | Element | Role |
 |---------|----------|------|
