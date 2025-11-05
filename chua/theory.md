@@ -76,6 +76,8 @@ $$ i_{NR}(v_1) = G_b v_1 + \frac{1}{2}(G_a - G_b)
 
 This defines a **three-segment** $I–V$ curve.
 
+**WARNING:** Notice the negative response of the system, the current flows "in the wrong direction". This is called negative differential resistance.
+
 ![Example of a piecewise linear response](images/piecewise.png)
 
 
@@ -110,10 +112,14 @@ $$
 Let us find the fixed points of this equation by setting
 
 Set $\frac{dx}{d\tau}=0,\frac{dy}{d\tau}=0,\frac{dx}{d\tau}=0$
-Hence there are **three fixed points**:
-$$
-E_0=(0,0,0), \quad E_{\pm}=(x_{\pm},0,-x_{\pm}).
-$$
+
+Hence there is the possibility of **three fixed points**:
+
+|Region| Fixed point|
+| &#124; x &#124; < 1 | $(0,0,0)$ |
+| &#124; x &#124; > 1 | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{beta}{\beta+gamma}\right) x^{\pm}$ |
+
+
 
 **Jacobian:**
 $$
