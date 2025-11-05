@@ -1,7 +1,8 @@
 # Lecture: Chua’s Oscillator — A Paradigm of Low-Dimensional Chaos
 **References:**  
 - Leon O. Chua, *IEEE Transactions on Circuits and Systems*, 1983–1986  
-- Matsumoto T., *IEEE Trans. Circuits Syst.*, 1984  
+- Matsumoto T., *IEEE Trans. Circuits Syst.*, 1984
+- Pivka, L., Wu, C.W., Huang, A.: Chua’s oscillator: a compendium of chaotic phenomena. [J. Franklin Inst. 331, 705–741 (1994)](https://people.eecs.berkeley.edu/~chua/papers/Pivka94.pdf)
 
 ---
 
