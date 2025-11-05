@@ -5,7 +5,7 @@
 
 ---
 
-## 🧮 Part I — Theoretical Lecture
+## Part I — Theory
 
 ### 1. Motivation and Context
 
