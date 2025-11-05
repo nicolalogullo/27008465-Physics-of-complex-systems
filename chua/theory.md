@@ -115,9 +115,10 @@ Set $\frac{dx}{d\tau}=0,\frac{dy}{d\tau}=0,\frac{dx}{d\tau}=0$
 
 Hence there is the possibility of **three fixed points**:
 
-|Region| Fixed point|
+|   Region  |  Fixed point  |
+|-------------|-------------|
 | &#124; x &#124; < 1 | $(0,0,0)$ |
-| &#124; x &#124; > 1 | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{beta}{\beta+gamma}\right) x^{\pm}$ |
+| &#124; x &#124; > 1 | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{beta}{\beta+\gamma}\right) x^{\pm}$ |
 
 
 
