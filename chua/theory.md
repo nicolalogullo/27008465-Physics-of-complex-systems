@@ -109,13 +109,14 @@ $$
 ---
 
 ### 5. Equilibria and Linear Stability
+**Fixed points**
 Let us find the fixed points of this equation by setting
 
 Set $\frac{dx}{d\tau}=0,\frac{dy}{d\tau}=0,\frac{dx}{d\tau}=0$
 
 Hence there is the possibility of **three fixed points**:
 
-|   Region  |  Fixed point  |
+|   Region  |  Fixed point (x,y,z) |
 |-------------|-------------|
 | $x < -1$ | $\left(1,\frac{\gamma}{\beta+\gamma},-\frac{\beta}{\beta+\gamma}\right) x^{-}$ |
 | $ | x | < 1$ | $(0,0,0)$ |
@@ -129,70 +130,20 @@ $$
 
 The two fixed points in the outer region $ |x|> 1 $ exist only for $\pm x^{\pm}>\pm 1$.
 
-**Jacobian:**
+
+
+**Stability**
+To study the stability of the fixed points we compute the Jacobian of the system:
 
 $$
 J =
 \begin{pmatrix}
 -\alpha(1+f'(x^*)) & \alpha & 0 \\
 1 & -1 & 1 \\
-0 & -\beta & 0
+0 & -\beta & -gamma
 \end{pmatrix}
 $$
 
-Eigenvalues determine local type:
-- Inner point → unstable focus or saddle-focus  
-- Outer points → saddle or node  
+where $ x^* $ is the x component of the fixed point $( x^*, y^*, z^*  )$ considered. 
 
----
 
-### 7. Bifurcations and Routes to Chaos
-
-Typical parameter variations cause:
-- **Hopf bifurcation** → oscillations  
-- **Period-doubling cascade** → chaos  
-- **Crisis bifurcation** → sudden attractor enlargement  
-- **Shilnikov homoclinic orbit** → guarantee of chaos for saddle-focus equilibrium
-
-**Common parameter set:**
-$$\alpha = 9.0,\beta = 14.286,m_0=-1.143, m_1=-0.714.$$
-
-Produces the famous **double-scroll attractor**.
-
----
-
-### 8. Chaotic Dynamics and Observables
-
-- **Double-scroll attractor:** trajectory alternates between two lobes.  
-- **Sensitivity to initial conditions:** exponential divergence of nearby states.  
-- **Lyapunov spectrum:** one positive, one zero, one negative exponent.  
-- **Fractal dimension:** \(D_2 \approx 2.0\).
-
----
-
-### 9. Quantitative Measures
-
-**Largest Lyapunov exponent**
-$$
-\lambda_1 = \lim_{t \to \infty}
- \frac{1}{t} \ln \frac{||\delta X(t)||}{||\delta X(0)||}.
-$$
-
-**Kaplan–Yorke dimension**
-$$
-D_{KY} = j + \frac{\sum_{i=1}^{j}\lambda_i}{|\lambda_{j+1}|}.
-$$
-
-**Poincaré map**
-- Plane $y=0,\ \dot{y}>0$
-- Projection $(x,z)$ shows fractal cross-section of attractor.
-
----
-
-### 10. Discussion
-
-- Chua’s circuit demonstrates *deterministic chaos* with minimal components.  
-- Connects nonlinear electronics, bifurcation theory, and complex systems.  
-- Rich phenomena: multistability, intermittency, crises, chaos control.
-
----
