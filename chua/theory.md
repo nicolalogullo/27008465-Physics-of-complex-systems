@@ -88,9 +88,9 @@ Let introduce dimensionless quantities
 ||||
 |-----------|-----------|-----------|
 |$x = \frac{v_1}{E}$ | $y = \frac{v_2}{E}$ | $z = \frac{R i_L}{E}$|
-| $\alpha=\frac{C_2}{C_1}$| $\beta=\frac{R^2 C_2}{L}$| \gamma=\frac{R R_0 C_2}{L}|
+| $\alpha=\frac{C_2}{C_1}$| $\beta=\frac{R^2 C_2}{L}$| $\gamma=\frac{R R_0 C_2}{L}$|
 |a=R G_a|b=R_Gb|$\tau = \frac{t}{R C_2}$|
-|-----------|-----------|-----------|
+
 
 Then
 
