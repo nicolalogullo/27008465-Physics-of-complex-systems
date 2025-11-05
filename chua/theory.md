@@ -65,34 +65,31 @@ $$
 The current $i_{NR}(v_1)$ is the current flowing through the non-linear resistor.
 In general can have any form, provided it is a non-linear function of $v_1$.
 The easiest form [Chua 1993] is a piecewise linear function.
+
+$$ i_{NR}(v_1) = G_a v_1 + \tfrac{1}{2}(G_b - G_a)
+  \big(|v_1 + E| - |v_1 - E|\big) $$
+
+- $G_a$: inner (negative) slope  
+- $G_b$: outer slope  
+- $E$: break voltage  
+
+
+This defines a **three-segment** $I–V$ curve.
+
 ![Example of a piecewise linear response](images/piecewise.png)
 
 
 
 ---
 
-### 4. Nonlinear Resistor Characteristic
+### 4. Normalization and Dimensionless Form
 
-Piecewise-linear function:
-
-$$ i_{NR}(v_1) = m_1 v_1 + \tfrac{1}{2}(m_0 - m_1)
-  \big(|v_1 + B_p| - |v_1 - B_p|\big) $$
-
-- $m_0$: inner (negative) slope  
-- $m_1$: outer slope  
-- $B_p$: break voltage  
-
-This defines a **three-segment** $I–V$ curve.
-
----
-
-### 5. Normalization and Dimensionless Form
-
-Let
-- $x = \frac{v_1}{B_p}$
-- $y = \frac{v_2}{B_p}$
-- $z = \frac{R i_L}{B_p}$
-- $\tau = \frac{t}{R C_2}.$
+Let introduce dimensionless quantities
+|-----------|-----------|-----------|
+|$x = \frac{v_1}{E}$ | $y = \frac{v_2}{E}$ | $z = \frac{R i_L}{E}$|
+| $\alpha=\frac{C_2}{C_1}$| $\beta=\frac{R^2 C_2}{L}$| \gamma=\frac{R R_0 C_2}{L}|
+|a=R G_a|b=R_Gb|$\tau = \frac{t}{R C_2}$|
+|-----------|-----------|-----------|
 
 Then
 
