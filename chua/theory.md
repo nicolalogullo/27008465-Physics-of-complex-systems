@@ -99,7 +99,7 @@ $$
 \frac{dx}{dt} &= \alpha (y - x - f(x)), \\
 \frac{dy}{dt} &= x - y + z, \\
 \frac{dz}{dt} &= -\beta y -gamma z,\\
-f(x) &= b x + \frac{1}{2} (a - b)(|x + 1| - |x - 1|), $$
+f(x) &= b x + \frac{1}{2} (a - b)(|x + 1| - |x - 1|).
 \end{aligned}
 $$
 
