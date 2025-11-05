@@ -66,7 +66,7 @@ The current $i_{NR}(v_1)$ is the current flowing through the non-linear resistor
 In general can have any form, provided it is a non-linear function of $v_1$.
 The easiest form [Chua 1993] is a piecewise linear function.
 
-$$ i_{NR}(v_1) = G_a v_1 + \tfrac{1}{2}(G_b - G_a)
+$$ i_{NR}(v_1) = G_b v_1 + \frac{1}{2}(G_a - G_b)
   \big(|v_1 + E| - |v_1 - E|\big) $$
 
 - $G_a$: inner (negative) slope  
@@ -92,25 +92,17 @@ Let introduce dimensionless quantities
 |a=R G_a|b=R_Gb|$\tau = \frac{t}{R C_2}$|
 
 
-Then
+Through which we can rewrite the set of equations as:
 
 $$
 \begin{aligned}
 \frac{dx}{dt} &= \alpha (y - x - f(x)), \\
 \frac{dy}{dt} &= x - y + z, \\
-\frac{dz}{dt} &= -\beta y,
+\frac{dz}{dt} &= -\beta y -gamma z,\\
+f(x) &= b x + \frac{1}{2} (a - b)(|x + 1| - |x - 1|), $$
 \end{aligned}
 $$
 
-with
-$$f(x) = m_1 x + \frac{1}{2} (m_0 - m_1)(|x + 1| - |x - 1|), $$
-and parameters
-$$
-\begin{aligned}
-\alpha &= \frac{C_2}{C_1}, \\
-\beta  &= \frac{R^2 C_2}{L}.
-\end{aligned}
-$$
 
 ---
 
