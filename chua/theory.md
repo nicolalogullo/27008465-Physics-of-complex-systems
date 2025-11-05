@@ -42,12 +42,12 @@ Apply Kirchhoff’s laws:
 
 1) The sum of all currents in a node is zero:
 $$
-\Sum_{l\in Node} i_l=0
+\sum_{l\in Node} i_l=0
 $$
 
 2) The sum of all potential drops within a loop is zero
 $$
-\Sum_{l\in Loop} v_l=0
+\sum_{l\in Loop} v_l=0
 $$
 
 $$
