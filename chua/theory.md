@@ -44,7 +44,7 @@ Apply Kirchhoff’s laws:
 
 
 | Quantity | Expression |
-|---------|----------|
+|-----------|---------------|
 | Currents | $\sum\limits_{l \in \text{Node}} i_l=0$ | 
 | Voltages | $\sum\limits_{l \in \text{Loop}} v_l=0$ | 
 
