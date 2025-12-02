@@ -20,7 +20,7 @@ This lecture provides:
 ## 2.1 The double pendulum system
 
 We consider two point masses:
-- Masses: $ m_1, m_2 $
+- Masses: $m_1, m_2$
 - Rod lengths: \( L_1, L_2 \)
 - Angles from the vertical: \( \theta_1, \theta_2 \)
 
