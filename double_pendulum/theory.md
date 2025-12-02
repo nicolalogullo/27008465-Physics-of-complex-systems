@@ -71,8 +71,7 @@ $$
 We obtain:
 
 $$ \ddot{\theta}_1 = 
-\frac{-g(2m_1+m_2)\sin\theta_1 - m_2 g\sin(\theta_1 - 2\theta_2)
- - 2\sin(\theta_1 - \theta_2)m_2\left( \dot\theta_2^2 L_2 + \dot\theta_1^2 L_1 \cos(\theta_1 - \theta_2 )\right)}
+\frac{-g(2m_1+m_2)\sin\theta_1 - m_2 g\sin(\theta_1 - 2\theta_2)- 2\sin(\theta_1 - \theta_2)m_2\left( \dot\theta_2^2 L_2 + \dot\theta_1^2 L_1 \cos(\theta_1 - \theta_2 )\right)}
  {L_1\left(2m_1 + m_2 - m_2\cos(2\theta_1 - 2\theta_2)\right)} $$
 
 $$
