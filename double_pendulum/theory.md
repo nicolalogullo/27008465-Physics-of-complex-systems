@@ -74,15 +74,12 @@ $$ \ddot{\theta}_1 =
 \frac{-g(2m_1+m_2)\sin\theta_1 - m_2 g\sin(\theta_1 - 2\theta_2)- 2\sin(\theta_1 - \theta_2)m_2\left( \dot\theta_2^2 L_2 + \dot\theta_1^2 L_1 \cos(\theta_1 - \theta_2 )\right)}
  {L_1\left(2m_1 + m_2 - m_2\cos(2\theta_1 - 2\theta_2)\right)} $$
 
-$$
-\ddot{\theta}_2 =
+$$ \ddot{\theta}_2 =
 \frac{2\sin(\theta_1 - \theta_2)}{L_2}\left[
-\dot\theta_1^2 L_1(m_1+m_2) + g(m_1+m_2)\cos\theta_1
- - \dot\theta_2^2 L_2 m_2 \cos(\theta_1 - \theta_2)
+\dot\theta_1^2 L_1(m_1+m_2) + g(m_1+m_2)\cos\theta_1-\dot\theta_2^2 L_2 m_2 \cos(\theta_1 - \theta_2)
 \right]
 \bigg/
-\left(2m_1 + m_2 - m_2\cos(2\theta_1 - 2\theta_2)\right)
-$$
+\left(2m_1 + m_2 - m_2\cos(2\theta_1 - 2\theta_2)\right)$$
 
 This nonlinear, coupled system shows chaotic behavior at sufficiently high energy.
 
