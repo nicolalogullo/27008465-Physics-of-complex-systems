@@ -21,8 +21,8 @@ This lecture provides:
 
 We consider two point masses:
 - Masses: $m_1, m_2$
-- Rod lengths: \( L_1, L_2 \)
-- Angles from the vertical: \( \theta_1, \theta_2 \)
+- Rod lengths: $L_1, L_2$
+- Angles from the vertical: $\theta_1, \theta_2$
 
 The configuration is fully described by the generalized coordinates:
 
