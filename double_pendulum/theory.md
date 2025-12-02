@@ -1,4 +1,4 @@
-# Lecture: The Double Pendulum — Theory, Chaos, and Numerical Simulation in C++
+# The Double Pendulum
 
 ## 1. Introduction
 
