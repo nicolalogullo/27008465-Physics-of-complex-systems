@@ -24,6 +24,8 @@ We consider two point masses:
 - Rod lengths: $L_1, L_2$
 - Angles from the vertical: $\theta_1, \theta_2$
 
+![Double pendulum](images/double_pendulum.png)
+
 The configuration is fully described by the generalized coordinates:
 
 $$
