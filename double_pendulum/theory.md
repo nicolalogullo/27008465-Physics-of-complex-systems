@@ -114,7 +114,7 @@ which can be used to derive the following equations:
 $$
 \begin{aligned}
 \ddot\theta_1&=\frac{m_2L_1\dot\theta_1^2\sin(2\theta_2-2\theta_1)/2+m_2L_2\dot\theta_2^2\sin(\theta_2-\theta_1)+m_2g\sin(\theta_2)\cos(\theta_2-\theta_1)-(m_1+m_2)g\sin(\theta_1)}{L_1((m_1+m_2)-m_2\cos^2(\theta_2-\theta_1)) }\\
-L_2 \ddot \theta_2&=-L_1\ddot \theta_1\cos(\theta_2-\theta_1)-L_1\dot\theta_1^2\sin(\theta_2-\theta_1)-g\sin(\theta_2),
+\ddot \theta_2&=\frac{1}{L_2}\left(-L_1\ddot \theta_1\cos(\theta_2-\theta_1)-L_1\dot\theta_1^2\sin(\theta_2-\theta_1)-g\sin(\theta_2)\right),
 \end{aligned}
 $$
 
