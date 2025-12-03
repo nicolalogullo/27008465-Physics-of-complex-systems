@@ -68,14 +68,23 @@ The velocity $v_2$ can be easily obtained by first computing it in the reference
 
 $$
 \begin{aligned}
-\tilde{\bf v}_2 = L_2\dot\theta_2\hat{\mathbf \theta}_2, \\
-{\bf v}_2 =\tilde{\bf v}_2+L_1\dot\theta_1\hat{\mathbf \theta}_1, \\  
+\tilde{\bf v}_2& = L_2\dot\theta_2\hat{\mathbf \theta}_2, \\
+{\bf v}_2 &=\tilde{\bf v}_2+L_1\dot\theta_1\hat{\mathbf \theta}_1, \\  
 \end{aligned}
 $$
 
+where $\hat{\mathbf \theta}_1$ and $\hat{\mathbf \theta}_2$ are the tangent vectors to the trajectories of the mass m_1 and m_2 in the rest and $m_1$ reference frame respectively.
+
+
 ### Lagrangian:
+
+We can now write the Lagrangian which is given by:
 $$
-\mathcal{L} = T - V
+\begin{aligned}
+\mathcal{L} &= T - V
+&=\frac{1}{2}m_1(L_1\dot \theta_1)^2+\frac{1}{2}m_2((L_1\dot \theta_1)^2+(L_2\dot \theta_2)^2+2L_1L_2\dot\theta_1\dot\theta_2\cos(\theta_1-\theta_2))\\
+&+m_1 g L_1 cos(\theta_1)+m_2 g L_2 cos(\theta_2). 
+\end{aligned}
 $$
 
 ---
