@@ -47,20 +47,21 @@ Obtain by differentiating the above expressions.
 
 ### Energies:
 $$
-T = \frac{1}{2}m_1 v_1^2 + \frac{1}{2}m_2 v_2^2
+\begin{aligned}
+T &= \frac{1}{2}m_1 v_1^2 + \frac{1}{2}m_2 v_2^2, \\
+V &= m_1 g y_1 + m_2 g y_2.
+\end{aligned}
 $$
-$$
-V = m_1 g y_1 + m_2 g y_2
-$$
+
 
 We now make a change of variables to polar coordinates to write:
 
 $$
 \begin{aligned}
-y_1&=L_1 cos(\theta_1),\\
-y_2&=L_1 cos(\theta_1)+L_2 cos(\theta_2),\\
+y_1&=-L_1 cos(\theta_1),\\
+y_2&=-L_1 cos(\theta_1)-L_2 cos(\theta_2),\\
 v_1&=L_1\dot \theta_1, \\
-v_2&=\sqrt{(L_1\dot \theta_1)^2+(L_2\dot \theta_2)^2+2L_1L_2\dot\theta_1\dot\theta_2\cos(\theta_1-\theta_2)}. \\
+v_2&=\sqrt{(L_1\dot \theta_1)^2+(L_2\dot \theta_2)^2+2L_1L_2\dot\theta_1\dot\theta_2\cos(\theta_2-\theta_1)}. \\
 \end{aligned}
 $$
 
@@ -79,11 +80,12 @@ where $\hat{\mathbf \theta}_1$ and $\hat{\mathbf \theta}_2$ are the tangent vect
 ### Lagrangian:
 
 We can now write the Lagrangian which is given by:
+
 $$
 \begin{aligned}
-\mathcal{L} &= T - V
-&=\frac{1}{2}m_1(L_1\dot \theta_1)^2+\frac{1}{2}m_2((L_1\dot \theta_1)^2+(L_2\dot \theta_2)^2+2L_1L_2\dot\theta_1\dot\theta_2\cos(\theta_1-\theta_2))\\
-&+m_1 g L_1 cos(\theta_1)+m_2 g L_2 cos(\theta_2). 
+\mathcal{L} &= T - V\\
+&=\frac{1}{2}m_1(L_1\dot \theta_1)^2+\frac{1}{2}m_2\left((L_1\dot \theta_1)^2+(L_2\dot \theta_2)^2+2L_1L_2\dot\theta_1\dot\theta_2\cos(\theta_2-\theta_1)\right)\\
+&m_1 g L_1 cos(\theta_1)+m_2 g (L_1 cos(\theta_1)+L_2 cos(\theta_2)). 
 \end{aligned}
 $$
 
@@ -97,7 +99,16 @@ $$
 \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot\theta_i}\right) - \frac{\partial \mathcal{L}}{\partial \theta_i} = 0
 $$
 
-We obtain:
+We obtain the two equations:
+
+$$
+\begin{aligned}
+(m_1+m_2)L_1 \ddot\theta_1+m_2\ddot\theta_2\cos(\theta_2-\theta_1)&=m_2L_2\dot\theta_2^2\sin(\theta_2-\theta_1)-(m_1+m_2)g\sin(\theta_1)\\
+L_2 \ddot \theta_2+L_1\ddot \theta_1\cos(\theta_2-\theta_1)&=-L_1\dot\theta_1^2\sin(\theta_2-\theta_1)-g\sin(\theta_2),
+\end{aligned}
+$$
+
+which can be used to derive the following equations:
 
 $$ \ddot{\theta}_1 = 
 \frac{-g(2m_1+m_2)\sin\theta_1 - m_2 g\sin(\theta_1 - 2\theta_2)- 2\sin(\theta_1 - \theta_2)m_2\left( \dot\theta_2^2 L_2 + \dot\theta_1^2 L_1 \cos(\theta_1 - \theta_2 )\right)}
