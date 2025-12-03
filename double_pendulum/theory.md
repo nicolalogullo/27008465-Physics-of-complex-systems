@@ -53,6 +53,26 @@ $$
 V = m_1 g y_1 + m_2 g y_2
 $$
 
+We now make a change of variables to polar coordinates to write:
+
+$$
+\begin{alinged}
+y_1&=L_1 cos(\theta_1),\\
+y_2&=L_1 cos(\theta_1)+L_2 cos(\theta_2),\\
+v_1&=L_1\dot \theta_1, \\
+v_2&=\sqrt{(L_1\dot \theta_1)^2+(L_2\dot \theta_2)^2+2L_1L_2\dot\theta_1\dot\theta_2\cos(\theta_1-\theta_2)}. \\
+\end{aligned}
+$$
+
+The velocity $v_2$ can be easily obtained by first computing it in the reference frame co-moving with the mass $m_1$ and then going back to the rest frame:
+
+$$
+\begin{aligned}
+\tilde\bf{v}_2 = L_2\dot\theta_2\cap\mathbf{\theta}_2, \\
+\bf{v}_2 =\tilde\bf{v}_2+L_1\dot\theta_1\cap\mathbf{\theta}_1, \\  
+\end{aligned}
+$$
+
 ### Lagrangian:
 $$
 \mathcal{L} = T - V
