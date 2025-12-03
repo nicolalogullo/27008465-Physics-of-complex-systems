@@ -68,8 +68,8 @@ The velocity $v_2$ can be easily obtained by first computing it in the reference
 
 $$
 \begin{aligned}
-\tilde\bf{v}_2 = L_2\dot\theta_2\hat{\mathbf \theta}_2, \\
-\bf{v}_2 =\tilde\bf{v}_2+L_1\dot\theta_1\hat{\mathbf \theta}_1, \\  
+\tilde{\bf v}_2 = L_2\dot\theta_2\hat{\mathbf \theta}_2, \\
+{\bf v}_2 =\tilde{\bf v}_2+L_1\dot\theta_1\hat{\mathbf \theta}_1, \\  
 \end{aligned}
 $$
 
