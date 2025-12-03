@@ -56,7 +56,7 @@ $$
 We now make a change of variables to polar coordinates to write:
 
 $$
-\begin{alinged}
+\begin{aligned}
 y_1&=L_1 cos(\theta_1),\\
 y_2&=L_1 cos(\theta_1)+L_2 cos(\theta_2),\\
 v_1&=L_1\dot \theta_1, \\
