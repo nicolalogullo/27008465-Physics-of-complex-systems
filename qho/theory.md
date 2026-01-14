@@ -31,24 +31,24 @@ spacings**.
 ## 3. Energy Levels and Level Spacings
 
 Let
-\[
+$$
 E_1 \le E_2 \le E_3 \le \cdots
-\]
+$$
 be the ordered energy eigenvalues of a quantum Hamiltonian.
 
 The **nearest-neighbor level spacing** is defined as:
-\[
+$$
 s_n = E_{n+1} - E_n
-\]
+$$
 
 To compare different systems, the spectrum is usually **unfolded** so that the mean spacing
 is equal to one:
-\[
+$$
 \langle s \rangle = 1
-\]
+$$
 
 The statistical quantity of interest is the **probability distribution \(P(s)\)** of the
-spacings \(s_n\).
+spacings $s_n$.
 
 ---
 
@@ -58,13 +58,13 @@ For **integrable quantum systems**, the energy levels are essentially uncorrelat
 As a consequence, level crossings are allowed and small spacings occur frequently.
 
 The level spacing distribution is given by the **Poisson distribution**:
-\[
+$$
 P_{\text{Poisson}}(s) = e^{-s}
-\]
+$$
 
 ### Key features:
 - No level repulsion
-- Finite probability at \(s = 0\)
+- Finite probability at $s = 0$
 - Typical of integrable systems
 - Example: particle in a box, harmonic oscillator
 
@@ -77,13 +77,13 @@ Exact degeneracies are avoided unless enforced by symmetries.
 
 The level spacing distribution follows the **Wigner–Dyson distribution**.
 For systems with time-reversal symmetry, the relevant case is the **Gaussian Orthogonal Ensemble (GOE)**:
-\[
-P_{\text{Wigner}}(s) = \frac{\pi}{2} s \, e^{-\pi s^2 / 4}
-\]
+$$
+P_{\text{GOE}}(s) = \frac{\pi}{2} s \, e^{-\pi s^2 / 4}
+$$
 
 ### Key features:
 - Strong level repulsion
-- \(P(s) \sim s\) for small \(s\)
+- $P(s) \sim s$ for small $s$
 - Universal behavior independent of microscopic details
 - Signature of quantum chaos
 
