@@ -1,3 +1,6 @@
+**References:**  
+- STŐCKMANN H.-J., Quantum Chaos, Cambridge University Press (1999)
+
 # Quantum Chaos and Energy Level Statistics
 
 ## 1. Introduction
