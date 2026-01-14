@@ -3,6 +3,7 @@
 #include <cmath>
 #include <fstream>
 #include <eigen-5.0.0/Eigen/Dense>
+#include <eigen-5.0.0/unsupported/Eigen/MatrixFunctions>
 #include <complex>
 
 using namespace Eigen;
@@ -54,7 +55,7 @@ int main()
     // -----------------------------
     // Hamiltonian
     // -----------------------------
-    MatrixXd H = num + 0.5 * MatrixXd::Identity(N, N)
+    MatrixXd H0 = num + 0.5 * MatrixXd::Identity(N, N)
                + lambda * x4;
 
     // -----------------------------
@@ -67,8 +68,8 @@ int main()
     // -----------------------------
     for (int k = 0; k < Nt; ++k) {
         double t = k * dt;
-        MatrixXcd Ht = H0 + F * cos(Omega * t) * x;
-        MatrixXcd step = (-complex<double>(0,1) * Ht * dt).exp();
+        MatrixXcd Ht = -complex<double>(0,1) * dt* (H0 + F * cos(Omega * t) * x);
+        MatrixXcd step = Ht.exp();
         U = step * U;
     }
 
@@ -94,7 +95,7 @@ int main()
 
     // Keep central part (avoid edge effects)
     vector<double> levels;
-    for (int i = N/4; i < N/4 + N_low; ++i)
+    for (int i = 0; i < N_low; ++i)
         levels.push_back(quasienergy[i]);
 
     // -----------------------------

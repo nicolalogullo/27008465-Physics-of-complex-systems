@@ -12,15 +12,14 @@ int main()
     // -----------------------------
     // Parameters
     // -----------------------------
-    const int N = 80;          // HO basis size
-    const int N_low = N / 2;   // keep low-energy part
+    const int N = 500;          // HO basis size
+    const int N_low = N;   // keep low-energy part
     const double lambda = 0.01; //x^4 coefficient
 
     // -----------------------------
     // Annihilation operators
     // -----------------------------
     MatrixXd a = MatrixXd::Zero(N, N);
-    MatrixXd adag = MatrixXd::Zero(N, N);
 
     for (int n = 0; n < N-1; ++n) {
         a(n, n+1) = sqrt(n + 1); //Annihilation operator
@@ -46,8 +45,7 @@ int main()
     // -----------------------------
     // Hamiltonian
     // -----------------------------
-    MatrixXd H = num + 0.5 * MatrixXd::Identity(N, N)
-               + lambda * x4;
+    MatrixXd H = num  + lambda * x4;
 
     // -----------------------------
     // Diagonalization
