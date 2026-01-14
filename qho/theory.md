@@ -82,7 +82,7 @@ Exact degeneracies are avoided unless enforced by symmetries.
 The level spacing distribution follows the **Wigner–Dyson distribution**.
 For systems with time-reversal symmetry, the relevant case is the **Gaussian Orthogonal Ensemble (GOE)**:
 
-$$ P_{\text{GOE}}(s) = \frac{\pi}{2} s \, e^{-\pi s^2 / 4} $$
+$$ P_{\text{GOE}}(s) = \frac{\pi}{2} s e^{-\pi s^2 / 4} $$
 
 ### Key features:
 - Strong level repulsion
