@@ -42,7 +42,7 @@ int main() {
     //params p = {9.0, 14.286, 0.05,-1.143, -0.714};
     double X[3] = {0.1, 0.0, 0.0};
     double dt = 0.001;
-    int N = 500000;
+    int N = 200000;
 
     std::ofstream traj("trajectory.txt");
     std::ofstream poinc("poincare.txt");
