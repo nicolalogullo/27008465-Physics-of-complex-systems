@@ -2,7 +2,7 @@
 #include <vector>
 #include <cmath>
 #include <fstream>
-#include <Eigen/Dense>
+#include <eigen-5.0.0/Eigen/Dense>
 
 using namespace Eigen;
 using namespace std;
@@ -14,10 +14,10 @@ int main()
     // -----------------------------
     const int N = 80;          // HO basis size
     const int N_low = N / 2;   // keep low-energy part
-    const double lambda = 0.01;
+    const double lambda = 0.01; //x^4 coefficient
 
     // -----------------------------
-    // Creation and annihilation operators
+    // Annihilation operators
     // -----------------------------
     MatrixXd a = MatrixXd::Zero(N, N);
     MatrixXd adag = MatrixXd::Zero(N, N);
@@ -68,14 +68,13 @@ int main()
     spec.close();
 
     // -----------------------------
-    // Unfolding: local mean spacing
+    // Energy level spacing
     // -----------------------------
     vector<double> spacings;
     ofstream sp("spacings.dat");
 
     for (int i = 1; i < N_low-1; ++i) {
-        double local_mean = (levels[i+1] - levels[i-1]) / 2.0;
-        double s = (levels[i+1] - levels[i]) / local_mean;
+        double s = (levels[i+1] - levels[i]);
         spacings.push_back(s);
         sp << s << "\n";
     }
