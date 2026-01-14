@@ -91,6 +91,9 @@ P_{\text{Wigner}}(s) = \frac{\pi}{2} s \, e^{-\pi s^2 / 4}
 
 ## 6. Physical Interpretation: Level Repulsion
 
+![Poisson vs Wigner distributions](images/distributions.png)
+
+
 The difference between Poisson and Wigner statistics reflects the underlying dynamics:
 
 - **Integrable systems** have independent quantum numbers → uncorrelated levels
