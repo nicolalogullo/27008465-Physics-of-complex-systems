@@ -72,10 +72,7 @@ $$
 
 Measure the period of $\theta_1(t)$ in both runs and compare with the prediction. This validates the equations of motion themselves, not just the integrator.
 
-**Exercise 1.3 (Code review — off-by-one bug, now fixed).**
-An earlier version of the code wrote the state to file **before** the first RK4 step and looped `steps` times, so the final state was never written and the last time value was wrong. The reference code now writes `steps+1` rows including the final state. Verify this: check that the first and last time values in `results.dat` are exactly $0$ and `steps*dt`. Then consider: if you stacked N such simulations end-to-end, how much time would silently go missing with the buggy version? *(A good lesson in checking array/file boundaries.)*
-
-**Exercise 1.4 (Add a new output quantity — Fortran practice).**
+**Exercise 1.3 (Add a new output quantity — Fortran practice).**
 Modify `double_pendulum.f90` to add a 7th column with the angular momentum of the second bob,
 $$p_{\theta_2} = m_2 L_2^2\,\dot\theta_2 + m_2 L_1 L_2\,\dot\theta_1\cos(\theta_2-\theta_1),$$
 computed in a new module function alongside `total_energy`. Convince yourself it is **not** conserved (unlike $E$), plot it over time, and explain physically why momentum exchange with the first arm breaks its conservation.
