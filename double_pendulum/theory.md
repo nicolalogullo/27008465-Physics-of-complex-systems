@@ -228,9 +228,9 @@ A 4th-order Runge–Kutta (RK4) integrator is used. Starting from the state $y_n
 
 $$
 k_1 = f(y_n),\quad
-k_2 = f\!\left(y_n + \tfrac{\Delta t}{2}k_1\right),\quad
-k_3 = f\!\left(y_n + \tfrac{\Delta t}{2}k_2\right),\quad
-k_4 = f\!\left(y_n + \Delta t\,k_3\right),
+k_2 = f\left(y_n + \tfrac{\Delta t}{2}k_1\right),\quad
+k_3 = f\left(y_n + \tfrac{\Delta t}{2}k_2\right),\quad
+k_4 = f\left(y_n + \Delta t\,k_3\right),
 $$
 
 and combines them
