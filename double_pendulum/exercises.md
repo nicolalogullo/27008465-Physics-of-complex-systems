@@ -56,7 +56,7 @@ Argue, in a few sentences, which of these behaviors you would change for a scien
 The double pendulum is a conservative system, so the total energy
 
 $$
-E = \tfrac12 m_1 L_1^2\dot\theta_1^2 + \tfrac12 m_2\!\left(L_1^2\dot\theta_1^2 + L_2^2\dot\theta_2^2 + 2L_1L_2\dot\theta_1\dot\theta_2\cos(\theta_2-\theta_1)\right) - (m_1+m_2)gL_1\cos\theta_1 - m_2gL_2\cos\theta_2
+E = \tfrac12 m_1 L_1^2\dot\theta_1^2 + \tfrac12 m_2\left(L_1^2\dot\theta_1^2 + L_2^2\dot\theta_2^2 + 2L_1L_2\dot\theta_1\dot\theta_2\cos(\theta_2-\theta_1)\right) - (m_1+m_2)gL_1\cos\theta_1 - m_2gL_2\cos\theta_2
 $$
 
 must be constant in time. The reference code already writes $E(t)$ as a 6th column — but do not trust it blindly: **recompute $E$ independently in Python** from $(t, \theta_1, \theta_2, \omega_1, \omega_2)$ and check that your values coincide with the file's. Then:
