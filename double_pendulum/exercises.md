@@ -82,7 +82,7 @@ computed in a new module function alongside `total_energy`. Convince yourself it
 ## Part 2 — Chaos: sensitive dependence on initial conditions
 
 **Exercise 2.1 (The butterfly effect).**
-Run a simulation with `perturb = 1.0e-3` in `&simulation`: the program produces both trajectories (`results.dat` and `results_pert.dat`) in one run. Plot $\theta_2(t)$ for both on the same axes. Estimate visually the time $t^{\ast}$ at which the two trajectories become clearly distinct, and repeat with $\delta = 10^{-6}$: roughly how much larger is $t^*$? What does this imply about long-term prediction?
+Run a simulation with `perturb = 1.0e-3` in `&simulation`: the program produces both trajectories (`results.dat` and `results_pert.dat`) in one run. Plot $\theta_2(t)$ for both on the same axes. Estimate visually the time $t^{\ast}$ at which the two trajectories become clearly distinct, and repeat with $\delta = 10^{-6}$: roughly how much larger is $t^{\ast}$? What does this imply about long-term prediction?
 
 **Exercise 2.2 (Divergence rate and the Lyapunov exponent).**
 Define the phase-space distance
