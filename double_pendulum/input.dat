@@ -1,0 +1,14 @@
+&pendulum1
+    m1 = 0.01,  l1 = 1.0
+    th1 = 0.002, w1 = 0.0
+/
+&pendulum2
+    m2 = 1.0,   l2 = 1.0
+    th2 = 0.5,  w2 = 0.0
+/
+&simulation
+    dt = 0.001
+    steps = 50000
+    poincare = .false.
+    perturb = 0.0
+/
