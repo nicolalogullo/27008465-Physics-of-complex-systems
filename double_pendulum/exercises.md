@@ -120,7 +120,7 @@ Repeat the Poincaré section for $E/(m g L) \approx 0.5,\ 1,\ 2,\ 4$ (tune the i
 
 ## Part 4 — Going further (optional / project-level)
 
-- **4.1 Momentum–energy coordinates.** Replot sections in terms of the conserved quantities: $p_\theta_2$ (angular momentum is *not* conserved; verify this numerically by plotting $p_{\theta_2}$ over time) and $E$.
+- **4.1 Momentum–energy coordinates.** Replot sections in terms of the conserved quantities: $p_{\theta_2}$ (angular momentum is *not* conserved; verify this numerically by plotting $p_{\theta_2}$ over time) and $E$.
 - **4.2 Fractal basin / final-state map.** For fixed energy, color-code each initial condition by some late-time observable (e.g. sign of $\theta_2(t_{end})$) and produce a 2D map: near the chaotic boundary the pattern is fractal.
 - **4.3 Animation.** Use the provided Python script to render an animation of the pendulum (positions $x_i, y_i$ from the angles), and a "double-pendulum art" figure obtained by fading the trace of $m_2$.
 - **4.4 Stroboscopic vs driving.** Replace RK4 with a symplectic integrator (e.g. leapfrog/velocity-Verlet adapted to this non-separable system is tricky — discuss why, and test the energy drift of RK4 vs. an implicit midpoint rule).
@@ -133,26 +133,3 @@ Repeat the Poincaré section for $E/(m g L) \approx 0.5,\ 1,\ 2,\ 4$ (tune the i
   4. whether chaos plays a role in their analysis (e.g. do they estimate a Lyapunov exponent, as in Ex. 2.2?).
   Be ready to present your findings in 3 minutes: this exercise connects the numerical methods of this section to how double-pendulum-type models are actually used in research.
 
----
-
-## Suggested additions to `theory.md`
-
-1. **Fix the Lagrangian:** the final line of $\mathcal L = T - V$ currently concatenates the kinetic and potential terms without the minus sign; it should read
-   $$\mathcal{L} = \tfrac12 m_1 L_1^2\dot\theta_1^2 + \tfrac12 m_2(\dots) - m_1 gL_1\cos\theta_1 - m_2 g(L_1\cos\theta_1 + L_2\cos\theta_2).$$
-2. **Add the conserved energy** $E$ explicitly (needed for Ex. 1.1) — currently never written down.
-3. **Add a short subsection on the small-angle limit** deriving the two normal modes $\omega_\pm = \omega_0\sqrt{2\pm\sqrt2}$ (used in Ex. 1.2) and noting the connection to coupled oscillators from earlier lectures.
-4. **Add a paragraph on Poincaré sections** (definition, why they visualize the energy surface, what tori vs chaotic sea look like) — currently §3.2 mentions "phase space structure" but gives the students no tool to *see* it.
-5. **Add the definition of the Lyapunov exponent** $\lambda = \lim_{t\to\infty}\lim_{d_0\to0} \frac1t \ln\frac{d(t)}{d_0}$ in §3.1, so Ex. 2.2 is grounded in the theory.
-6. Minor: §4 states the first-order rewriting but never shows the RK4 formulas — a two-line sketch (the $k_i$ combination) would let students connect the math to the `rk4_step` function.
-
-## Reference code: features and conventions
-
-Both implementations share the following conventions (kept here as a checklist if you write your own version from scratch):
-
-- All parameters read from the namelist-style input file (`&pendulum1`, `&pendulum2`, `&simulation`), so no exercise requires recompiling.
-- Output `results.dat` with a `#` header line and six columns `t th1 th2 w1 w2 E`.
-- `steps+1` rows written, including the final state (cf. Ex. 1.3).
-- `poincare` mode for Ex. 3.2 and `perturb` mode (second trajectory → `results_pert.dat`) for Ex. 2.1–2.2.
-- Unknown keys or a malformed/missing input file: runtime error; omitted keys keep their defaults (cf. Ex. 0.3).
-
-If you start instead from a minimal single-file version with hard-coded parameters (no namelists, 5-column output), the porting work itself — namelist reading, the energy column, the loop fix, the two extra modes — is a worthwhile guided exercise in itself.
