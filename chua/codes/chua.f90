@@ -1,4 +1,3 @@
-
 ! chua.f90 — RK4 integration of the (dimensionless) Chua oscillator.
 ! Compile:  gfortran -O2 -o chua chua.f90
 ! Run:      ./chua [input_file]     (default: input.dat)
@@ -248,6 +247,7 @@ program chua
    use chua_analysis
    implicit none
    character(256) :: fname
+   integer :: u
    type(state_type) :: s0, sp
 
    ! ---- namelist variables (defaults = canonical double scroll) ----
