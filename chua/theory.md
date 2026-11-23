@@ -242,9 +242,9 @@ We integrate with the classic 4th-order Runge–Kutta scheme
 
 $$
 k_1 = f(y_n),\quad
-k_2 = f\!\left(y_n + \tfrac{\Delta\tau}{2}k_1\right),\quad
-k_3 = f\!\left(y_n + \tfrac{\Delta\tau}{2}k_2\right),\quad
-k_4 = f\!\left(y_n + \Delta\tau\,k_3\right),
+k_2 = f\left(y_n + \tfrac{\Delta\tau}{2}k_1\right),\quad
+k_3 = f\left(y_n + \tfrac{\Delta\tau}{2}k_2\right),\quad
+k_4 = f\left(y_n + \Delta\tau\,k_3\right),
 $$
 
 $$
