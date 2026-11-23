@@ -1,0 +1,11 @@
+&circuit
+    alpha = 9.0, beta = 14.286, gamma = 0.0
+    a = -1.142857, b = -0.714286
+/
+&initial
+    x0 = 0.1, y0 = 0.0, z0 = 0.0
+/
+&simulation
+    dt = 0.001, steps = 200000, stride = 10
+    poincare = .true., perturb = 0.0, analysis = .false.
+/
