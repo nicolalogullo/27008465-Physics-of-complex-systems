@@ -1,0 +1,10 @@
+&rotor
+    K = 5.0, hbar = 1.0, N = 128
+/
+&initial
+    m0 = 0, x0 = 0.1, p0 = 0.0, seed = 12345
+/
+&simulation
+    nkicks = 2000, stride = 10, ensemble = 5000
+    quantum = .true., classical = .true.
+/
